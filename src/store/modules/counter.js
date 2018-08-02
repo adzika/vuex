@@ -34,7 +34,7 @@ const actions = {
     },
     asyncDecrement: ({commit}, payload) => {
         setTimeout(() => {
-            commit('increment', payload.by);
+            commit('decrement', payload.by);
         }, payload.duration);
     }
 };
